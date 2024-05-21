@@ -10,7 +10,7 @@ export type DestinationCardType = {
 };
 
 const DestinationCard: FunctionComponent<DestinationCardType> = ({
-  image,
+  image = "url(/public/destinationcard@3x.png)",
   city = "city",
   price = "0",
 }) => {
