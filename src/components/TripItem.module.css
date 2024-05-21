@@ -1,0 +1,33 @@
+.icon,
+.text {
+  position: relative;
+}
+.icon {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+.text {
+  align-self: stretch;
+  letter-spacing: 0.04em;
+}
+.tripitem {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--components-button-large-size);
+  color: var(--color-gray-100);
+  font-family: var(--components-button-large);
+}
+@media screen and (max-width: 420px) {
+  .tripitem {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+    width: 33.33%;
+    text-align: center;
+  }
+}

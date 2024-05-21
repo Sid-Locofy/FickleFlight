@@ -10,7 +10,7 @@ export type NavigationLinkType = {
 
 const NavigationLink: FunctionComponent<NavigationLinkType> = ({
   text = "text",
-  textColor = "#1262AF",
+  textColor,
 }) => {
   const textStyle: CSSProperties = useMemo(() => {
     return {

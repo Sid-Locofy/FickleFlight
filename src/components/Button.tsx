@@ -5,7 +5,7 @@ export type ButtonType = {
   text?: string;
 };
 
-const Button: FunctionComponent<ButtonType> = ({ text = "Button" }) => {
+const Button: FunctionComponent<ButtonType> = ({ text = "text" }) => {
   return (
     <button className={styles.button}>
       <div className={styles.text}>{text}</div>
