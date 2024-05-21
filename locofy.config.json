@@ -1,11 +1,9 @@
 {
   "components": [
-    "./src/components/DestinationCard.tsx",
     "./src/components/FlightMainContainer.tsx",
     "./src/components/Footer.tsx",
     "./src/components/Header.tsx",
     "./src/components/NavigationLink.tsx",
-    "./src/components/SubscribeSection.tsx",
     "./src/components/Button.tsx"
   ]
 }
