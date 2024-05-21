@@ -1,14 +1,24 @@
 import { FunctionComponent } from "react";
 import styles from "./HotelCard.module.css";
 
+export enum Rating {
+  One = 1,
+  Two = 2,
+  Three = 3,
+  Four = 4,
+  Five = 5
+}
+
 export type HotelCardType = {
   image?: string;
   hotelType?: string;
   hotelName?: string;
   price?: string;
   showVideoIcon?: boolean;
-  rating?: string;
-  reviews?: string;
+  rating?: Rating;
+  reviews?: number;
+  callToAction?: Node;
+  onVideoIconClick?: () => void;
 };
 
 const HotelCard: FunctionComponent<HotelCardType> = ({
@@ -16,9 +26,11 @@ const HotelCard: FunctionComponent<HotelCardType> = ({
   hotelType = "Hotel Type",
   hotelName = "Hotel Name",
   price = "0",
-  showVideoIcon = true,
-  rating = "0",
-  reviews = "0",
+  showVideoIcon,
+  rating = Rating.Five,
+  reviews = 0,
+  callToAction,
+  onVideoIconClick
 }) => {
   return (
     <div className={styles.hotelCard}>
@@ -30,7 +42,7 @@ const HotelCard: FunctionComponent<HotelCardType> = ({
           <div className={styles.price}>{price}</div>
         </div>
         {showVideoIcon && (
-          <img className={styles.videoIcon} alt="" src="/video.svg" />
+          <img className={styles.videoIcon} alt="" src="/video.svg" onClick={onVideoIconClick}/>
         )}
       </div>
       <div className={styles.rating}>
@@ -38,11 +50,9 @@ const HotelCard: FunctionComponent<HotelCardType> = ({
           <img className={styles.vectorIcon} alt="" src="/vector.svg" />
           <div className={styles.rating1}>{rating}</div>
         </div>
-        <div className={styles.reviews}>{reviews}</div>
+        <div className={styles.reviews}>{"("}{reviews}{" reviews)"}</div>
       </div>
-      <div className={styles.moreDetailsButton}>
-        <div className={styles.button}>More details</div>
-      </div>
+      {callToAction}
     </div>
   );
 };
