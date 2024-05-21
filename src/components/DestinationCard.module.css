@@ -40,7 +40,7 @@
   padding: var(--padding-xs);
   box-sizing: border-box;
   gap: var(--gap-8xs);
-  /* background-image: url(/public/destinationcard@3x.png); */
+  background-image: url(/public/destinationcard@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

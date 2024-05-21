@@ -78,7 +78,7 @@
   overflow: hidden;
   justify-content: flex-start;
   padding: var(--padding-26xl) var(--padding-xl);
-  /* background-image: url(/public/subscribe-section@3x.png); */
+  background-image: url(/public/subscribe-section@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
