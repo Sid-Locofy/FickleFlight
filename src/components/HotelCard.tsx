@@ -17,7 +17,7 @@ export type HotelCardType = {
   showVideoIcon?: boolean;
   rating?: Rating;
   reviews?: number;
-  callToAction?: Node;
+  callToAction?: React.ReactNode;
   onVideoIconClick?: () => void;
 };
 
