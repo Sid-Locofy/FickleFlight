@@ -7,7 +7,5 @@
     "./src/components/NavigationLink.tsx",
     "./src/components/SubscribeSection.tsx",
     "./src/components/Button.tsx"
-  ],
-  "projectId": "664ba5b3ce20d653edcbac85",
-  "projectName": "newtestcli"
+  ]
 }
