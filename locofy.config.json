@@ -1,0 +1,12 @@
+{
+    "components": [
+      "./src/components/ArrowRightIcon.tsx",
+      "./src/components/FlightMainContainer.tsx",
+      "./src/components/Footer.tsx",
+      "./src/components/Header.tsx",
+      "./src/components/HolidayCard.tsx",
+      "./src/components/HotelCard.tsx",
+      "./src/components/TripItem.tsx",
+      "./src/components/Button.tsx"
+    ]
+  }
