@@ -1,0 +1,38 @@
+.text {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--components-button-large-size);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--components-button-large);
+  color: var(--primary-contrast);
+  text-align: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-3xs);
+  background-color: var(--color-orange);
+  width: 100%;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 160px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 960px) {
+  .button {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .button {
+    width: 100% !important;
+  }
+}

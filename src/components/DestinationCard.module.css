@@ -1,0 +1,52 @@
+.city {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.from,
+.price {
+  position: relative;
+  display: inline-block;
+}
+.from {
+  width: 52.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.price {
+  height: 38px;
+  font-size: var(--font-size-19xl);
+  line-height: 38px;
+  font-family: var(--font-baloo-bhai);
+}
+.destinationcard,
+.details {
+  height: 59px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+  text-align: right;
+  font-size: var(--font-size-base);
+}
+.destinationcard {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  height: 180px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
+  background-image: url(/public/destinationcard@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 280px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--primary-contrast);
+  font-family: var(--components-button-large);
+}

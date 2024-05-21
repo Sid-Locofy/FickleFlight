@@ -1,0 +1,13 @@
+{
+  "components": [
+    "./src/components/DestinationCard.tsx",
+    "./src/components/FlightMainContainer.tsx",
+    "./src/components/Footer.tsx",
+    "./src/components/Header.tsx",
+    "./src/components/NavigationLink.tsx",
+    "./src/components/SubscribeSection.tsx",
+    "./src/components/Button.tsx"
+  ],
+  "projectId": "664ba5b3ce20d653edcbac85",
+  "projectName": "newtestcli"
+}

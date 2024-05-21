@@ -1,0 +1,18 @@
+.text {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--components-button-large);
+  color: var(--color-cornflowerblue-100);
+  text-align: center;
+  display: inline-block;
+}
+.navigationlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
