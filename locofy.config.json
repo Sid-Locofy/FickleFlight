@@ -11,7 +11,5 @@
     "./src/components/TripItem.tsx",
     "./src/components/SubscribeSection.tsx",
     "./src/components/Button.tsx"
-  ],
-  "projectId": "664b8677ce20d653edcbac71",
-  "projectName": "JamesDemo"
+  ]
 }
